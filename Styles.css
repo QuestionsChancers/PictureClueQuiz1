@@ -1,0 +1,77 @@
+/* styles.css */
+body {
+  font-family: Arial, sans-serif;
+  text-align: center;
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  background-color: #333;
+  color: white;
+  padding: 20px 0;
+}
+
+main {
+  margin: 20px;
+}
+
+/* Container for the image */
+#image-container {
+  width: 80vw; /* Responsive width */
+  height: auto;
+  overflow: hidden; /* Ensures zoomed image stays within bounds */
+  position: relative;
+  margin: 20px auto;
+  border: 2px solid #ccc;
+  touch-action: none; /* Prevents touch scrolling */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#quiz-image {
+  width: 100%; /* Ensures the whole image fits within the container */
+  height: auto; /* Maintain aspect ratio */
+  transform: translate(0, 0) scale(1); /* Reset initial transform */
+  transform-origin: center center; /* Center zoom and pan transformations */
+  cursor: grab; /* Indicate that the image can be dragged */
+  transition: transform 0.1s ease-in-out; /* Smooth transitions for zoom */
+}
+
+
+
+
+
+/* Zoom controls styling */
+#zoom-controls {
+  margin-top: 10px;
+}
+
+#zoom-controls button {
+  padding: 10px 15px;
+  font-size: 14px;
+  margin: 0 5px;
+  cursor: pointer;
+}
+
+#answers {
+  margin-top: 20px;
+}
+
+#answer {
+  padding: 10px;
+  font-size: 16px;
+  width: 60%;
+}
+
+#submit {
+  padding: 10px 20px;
+  font-size: 16px;
+  margin-left: 10px;
+}
+
+#feedback {
+  margin-top: 20px;
+  font-weight: bold;
+}

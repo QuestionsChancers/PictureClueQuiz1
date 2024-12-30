@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Picture Quiz</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <h1>Picture Quiz</h1>
+    <p>Can you guess all the clues in the image below?</p>
+  </header>
+  <main>
+    <div id="image-container">
+      <img src="quiz-image1.jpg" alt="Picture Quiz" id="quiz-image">
+    </div>
+    <div id="answers">
+      <input type="text" id="answer" placeholder="Enter your guess here">
+      <button id="submit">Submit</button>
+      <p id="score">Score: 0/25</p>
+    </div>
+    <div id="feedback"></div>
+    <div id="zoom-controls">
+      <button id="zoom-in">Zoom In</button>
+      <button id="zoom-out">Zoom Out</button>
+    </div>
+  </main>
+  <script src="script.js"></script>
+</body>
+</html>
